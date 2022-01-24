@@ -1,0 +1,26 @@
+{
+  "name": "answer-the-question",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcalhoun286/answer-the-question.git"
+  },
+  "author": "Dar-Ci Calhoun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcalhoun286/answer-the-question/issues"
+  },
+  "homepage": "https://github.com/dcalhoun286/answer-the-question#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "jest": "^27.4.7",
+    "method-override": "^3.0.0"
+  }
+}

@@ -15,19 +15,14 @@ app.get('*', (req, res) => {
   res.status(404).send('Page Not Found');
 });
 
+const start = (port) => {
+
+  if (!port) { throw new Error ('Missing Port'); }
+
+  app.listen(port, () => console.log(`Server up on port ${port}`));
+}
+
 module.exports = {
   app: app,
-  start: (port) => {
-    try {
-
-      app.listen(port, () => {
-        console.log(`server up on port ${port}`);
-      });
-
-    } catch (err) {
-
-      console.error(err);
-
-    }
-  },
+  start: start,
 }

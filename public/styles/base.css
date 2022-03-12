@@ -22,7 +22,6 @@ header {
 h1 {
   font-family: 'Dela Gothic One', cursive;
   font-weight: bolder;
-  font-size: 3.5vw;
   font-size: 3.5vmin;
   font-size: 4vmax;
 }

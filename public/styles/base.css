@@ -27,7 +27,7 @@ h1 {
 }
 
 main {
-  background-image: radial-gradient(farthest-corner at 40px, 40px, rgb(182, 2, 137), maroon);
+  background-image: radial-gradient(farthest-corner at 40px 40px, rgb(182, 2, 137), maroon);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 80vw;

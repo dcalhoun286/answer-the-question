@@ -22,7 +22,11 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
 
-  // TODO: I have an if statement here because I'm not yet sure why two request bodies are being sent to the server and need to debug this. The first one being sent is an empty object, followed by the object I am expecting.
+  /*
+    ====== TODO ======
+      - I have an if statement here because I'm not yet sure why two request bodies are being sent to the server and need to debug this. The first one being sent is an empty object, followed by the object I am expecting.
+      - Code below in this POST request needs to eventually be modified once there are actual shell scripts to run so that a certain shell script will run based on the key/value pairs in req.body
+  */
   
   if(!req.body.scenario) {
     console.log(null);

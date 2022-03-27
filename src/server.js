@@ -3,7 +3,7 @@
 const express = require('express');
 const cors = require('cors');
 const methodOverride = require('method-override');
-const cp = require('child_process');
+const childProcess = require('child_process');
 const app = express();
 
 app.use(express.json());
@@ -40,7 +40,7 @@ app.post('/', (req, res) => {
         - https://nodejs.org/api/child_process.html
         - https://nodejs.org/api/child_process.html#child_processexeccommand-options-callback
     */
-    cp.exec(`sh ${resolvedPath}`, (err, stdout, stderr) => {
+    childProcess.exec(`sh ${resolvedPath}`, (err, stdout, stderr) => {
       console.log(stdout);
       if (err) { console.error(`error: ${err}`); }
       if (stderr) { console.log(`stderr: ${stderr}`); }
